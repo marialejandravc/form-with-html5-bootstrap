@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/150258d60a.js" crossorigin="anonymous"></script>
+  <title>Form</title>
+</head>
+
+<body>
+  <div class="card container p-0 my-5">
+    <div class="card-header">
+      <h1>Payment Form Example</h1>
+    </div>
+    <div class="card-body">
+      <div class="alert alert-danger" role="alert">
+        Some fields are missing
+      </div>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="Card" class="form-label">Card#</label>
+          <input type="text" placeholder="XXXXXXXXXXX" class="form-control ">
+        </div>
+        <div class="col-md-3">
+          <label for="CVV" class="form-label">#CVV</label>
+          <input type="text" placeholder="XXX" class="form-control" id="inputCvv">
+        </div>
+        <div class="col-md-5">
+          <label for="Amount" class="form-label">Amount</label>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-dollar-sign me-1"></i>
+            <input type="text" class="form-control" id="inputAmount">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="name" class="form-label">First name</label>
+          <input type="text" placeholder="Write your Firts name" class="form-control" id="inputName">
+        </div>
+        <div class="col-md-6">
+          <label for="Amount" class="form-label">Last Name</label>
+          <input type="text" placeholder="Write your Last Name" class="form-control" id="inputAmount">
+        </div>
+
+        <div class="col-md-5">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+
+        <div class="col-md-4">
+          <label for="selectState" class="form-label">Community</label>
+          <select id="selectState" class="form-select form-control">
+            <option>Amazonas</option>
+            <option>Anzoátegui</option>
+            <option>Apure</option>
+            <option>Aragua</option>
+            <option>Barinas</option>
+            <option>Bolívar</option>
+            <option>Carabobo</option>
+            <option>Cojedes</option>
+            <option>Delta Amacuro</option>
+            <option>Distrito Capital</option>
+            <option>Falcón</option>
+            <option>Guárico</option>
+            <option>Lara</option>
+            <option>Mérida</option>
+            <option>Miranda</option>
+            <option>Monagas</option>
+            <option>Nueva Esparta</option>
+            <option>Portuguesa</option>
+            <option>Sucre</option>
+            <option>Táchira</option>
+            <option>Trujillo</option>
+            <option>Vargas</option>
+            <option>Yaracuy</option>
+            <option>Zulia</option>
+
+
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+
+
+        <div class="col-md-6">
+          <label class="form-label">We accept:</label>
+          <div class="bg-secondary p-2 rounded col-5">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-paypal"></i></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-google-pay"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-apple-pay"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">
+                <i class="fa-brands fa-amazon-pay"></i></label>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6 ms-auto">
+          <label for="validationTextarea" class="form-label">Message</label>
+          <textarea class="form-control " id="validationTextarea" placeholder="Required example textarea"
+            rows="4"></textarea>
+
+        </div>
+
+      </form>
+
+    </div>
+    <div class="card-footer text-end">
+      <button type="button" class="btn btn-secondary">Close</button>
+      <button type="button" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+
+  <!-- script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
